@@ -1,0 +1,79 @@
+:root {
+    --primary: #3656D4;
+    --negro: #1E1E1E;
+    --blanco: #FFF;
+    --fuente-principal: 'Outfit', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 2rem;
+    font-family: var(--fuente-principal);
+    line-height: 1.5;
+}
+img {
+    max-width: 100%;
+    
+}
+[class$="__contenedor"] {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.header {
+    padding-bottom: 5rem;
+}
+
+.header__logo {
+    text-decoration: none;
+    color: var(--primary);
+    
+}
+.header__barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+}
+.navegacion__link {
+    text-decoration: none;
+}
+.navegacion__boton {
+    text-decoration: none;
+    color: #FFF;
+    background-color: var(--primary);
+    padding: 1rem;
+}
+
+/* HERO */
+
+.hero {
+    background-image: linear-gradient( to left, transparent 50%, var(--blanco) 0% ), url(/img/header.png) ;
+    
+    height: 75rem;
+    background-repeat:no-repeat;
+    background-size: 100%, 80%;
+    background-position: center cover;
+    padding: 10rem 0;;
+}
+.hero__contenedor{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+
+
+.hero__texto {
+    grid-column: 1/2;
+}
